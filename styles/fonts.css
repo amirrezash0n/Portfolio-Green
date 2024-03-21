@@ -1,0 +1,45 @@
+/* 
+
+-- Fonts 
+
+*/
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../fonts/Poppins/Poppins-Bold.ttf) format(opentype) ;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay-Black";
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Black.ttf) format(opentype) ;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay-Bold";
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf) format(opentype) ;
+}
+
+@font-face {
+    font-family: "-ReMontserratgular";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format(opentype) ;
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf) format(opentype) ;
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf) format(opentype) ;
+}
+
+@font-face {
+    font-family: "Montserrat-ExtraLight";
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf) format(opentype) ;
+}
+
+@font-face {
+    font-family: "PerpetuaTitlingMTLight2";
+    src: url(../fonts/PerpetuaTitlingMT/PerpetuaTitlingMTLight2.ttf) format(opentype) ;
+}
