@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="styles/app.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
 </head>
 <body>
     <header class="header">
+        <div class="header__scroll"></div>
         <div class="container">
             <nav class="nav">
                 <div class="nav__wrapper">
@@ -55,12 +57,12 @@
                     <div class="col-12 col-lg-6">
                         <div class="home-left">
                             <span class="section-title">Welcome! I'M</span>
-                            <h1 class="home-left__title">Wilkerson Hardin</h1>
+                            <h1 class="home-left__title" id="home-left__title">Wilkerson Hardin</h1>
                             <span class="home-left__subtitle">Web Developer & UX Designer</span>
                             <p class="home-left__text">Lorem ipsum dolor sit amet,Stet clita kasd gubergren, no sea takimata sanctus est is thelorem ipsum dolor sit amet. sed diam nonumy eirmod tempor invidunt ut labore et dolore is the magna aliquyam.</p>
                             <div class="home__links">
-                                <a class="btn" href="#">Hire Me</a>
-                                <a class="btn" href="#">Explore</a>
+                                <a class="btn wow hinge" href="#">Hire Me</a>
+                                <a class="btn wow hinge" href="#">Explore</a>
                             </div>
                         </div>
                     </div>
@@ -135,7 +137,7 @@
                         <span class="section-title">About Me</span>
                         <h3 class="about-right__title">Why hire me for your next project?</h3>
                         <p class="about-right__caption">I'm Creative Director and UI/UX Designer from New York, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add a personal touch to your product and make sure that it is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.</p>
-                        <a class="btn" href="#">Download CV</a>
+                        <a class="btn" id="btn__counter" href="#">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -145,26 +147,26 @@
             <div class="container">
                 <div class="statistics__wrapper">
                     <div class="statistics-content">
-                        <div class="statistics-content__circle">
-                            <h2 class="statistics-content__percent">50%</h2>
+                        <div class="statistics-content__circle ">
+                            <h2 class="statistics-content__percent" data-count="50">0%</h2>
                             <p class="statistics-content__career">Web DESIGN</p>
                         </div>
                    </div>
                      <div class="statistics-content">
                         <div class="statistics-content__circle">
-                            <h2 class="statistics-content__percent">75%</h2>
+                            <h2 class="statistics-content__percent" data-count="75">0%</h2>
                             <p class="statistics-content__career">Development</p>
                         </div>
                      </div>
                      <div class="statistics-content">
                         <div class="statistics-content__circle">
-                            <h2 class="statistics-content__percent">20%</h2>
+                            <h2 class="statistics-content__percent" data-count="20">0%</h2>
                             <p class="statistics-content__career">Web DESIGN</p>
                         </div>
                      </div>
                      <div class="statistics-content">
                         <div class="statistics-content__circle">
-                            <h2 class="statistics-content__percent">50%</h2>
+                            <h2 class="statistics-content__percent" data-count="50">0%</h2>
                             <p class="statistics-content__career">Web DESIGN</p>
                         </div>
                      </div>
@@ -179,7 +181,7 @@
                     <span class="services__title">My Provided Features</span>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow bounceInLeft">
                         <div class="service">
                             <svg class="service__icon" width="47.891" height="47.891" viewBox="0 0 47.891 47.891">
                                 <path id="Path_70" data-name="Path 70" d="M43.214,0H4.677A4.682,4.682,0,0,0,0,4.677V33.3a4.682,4.682,0,0,0,4.677,4.677H19.269v4.3h-.935a4.678,4.678,0,0,0-4.677,4.677.935.935,0,0,0,.935.935H33.3a.935.935,0,0,0,.935-.935,4.682,4.682,0,0,0-4.677-4.677h-.935v-4.3H43.214A4.682,4.682,0,0,0,47.891,33.3V4.677A4.682,4.682,0,0,0,43.214,0ZM4.677,1.871H43.214a2.809,2.809,0,0,1,2.806,2.806V28.623h-4.3V7.109a.935.935,0,0,0-.935-.935H33.3a.935.935,0,0,0-.935.935V28.623H27.682c-.01-.968-.035-1.921-.075-2.846a60.165,60.165,0,0,0-.731-7.484,4.677,4.677,0,0,0,1.277-6.1L24.911,6.576a.935.935,0,0,0-1.62,0l-3.243,5.616a4.676,4.676,0,0,0,1.029,5.9,59.377,59.377,0,0,0-.788,7.68c-.042.935-.069,1.889-.079,2.848H15.527V14.592a.93.93,0,0,0-.092-.4s0-.01-.006-.015L11.687,6.691a.936.936,0,0,0-1.673,0L6.272,14.174l-.006.015a.93.93,0,0,0-.093.4V28.623h-4.3V4.677A2.809,2.809,0,0,1,4.677,1.871ZM34.235,28.623V8.044h5.612V9.915h-.935a.935.935,0,0,0,0,1.871h.935v2.806h-.935a.935.935,0,0,0,0,1.871h.935v2.806h-.935a.935.935,0,0,0,0,1.871h.935v3.742h-.935a.935.935,0,0,0,0,1.871h.935v1.871ZM24.1,19.2a4.684,4.684,0,0,0,1.009-.112c.174,1.113.429,3.081.579,5.789H22.208c.158-2.706.425-4.705.61-5.856A4.683,4.683,0,0,0,24.1,19.2Zm0-1.871a2.81,2.81,0,0,1-2.433-4.206L24.1,8.915l2.432,4.212A2.808,2.808,0,0,1,24.1,17.333Zm-1.979,9.418h3.65c.02.615.033,1.24.04,1.871H22.08c.007-.627.021-1.252.042-1.871ZM11.786,28.623v-13.1h1.871v13.1Zm-3.742,0v-13.1H9.915v13.1Zm.578-14.966L10.85,9.2l2.228,4.456ZM32.2,46.021H15.686a2.812,2.812,0,0,1,2.647-1.871H29.558A2.811,2.811,0,0,1,32.2,46.021Zm-5.452-3.742H21.139v-4.3h5.612Zm16.463-6.173H4.677A2.809,2.809,0,0,1,1.871,33.3V30.493H46.02V33.3A2.809,2.809,0,0,1,43.214,36.106Zm0,0" fill="#0fbf61"/>
@@ -195,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow bounceInLeft">
                         <div class="service">
                             <svg class="service__icon" id="Page-1"  width="55.219" height="55.279" viewBox="0 0 55.219 55.279" fill="#0fbf61">
                                 <g id="_035---Creative-Thinking" data-name="035---Creative-Thinking" transform="translate(0 0)">
@@ -217,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow bounceInLeft">
                         <div class="service">
                             <svg class="service__icon" id="_1237114" data-name="1237114"  width="50.202" height="50.202" viewBox="0 0 50.202 50.202">
                                 <path id="Path_107" data-name="Path 107" d="M3.348,112.778h12.87l-.837,1.673h-.319c-2.62,0-4.184,1.251-4.184,3.347a1.673,1.673,0,0,0,1.673,1.673h25.1a1.673,1.673,0,0,0,1.673-1.673c0-2.1-1.564-3.347-4.184-3.347h-.319l-.837-1.673h12.87a3.347,3.347,0,0,0,3.347-3.347V80.147A3.347,3.347,0,0,0,46.856,76.8h-9.2a.837.837,0,1,0,0,1.673h9.2a1.673,1.673,0,0,1,1.673,1.673v29.284a1.673,1.673,0,0,1-1.673,1.673H3.348a1.673,1.673,0,0,1-1.673-1.673V80.147a1.673,1.673,0,0,1,1.673-1.673h9.2a.837.837,0,1,0,0-1.673h-9.2A3.347,3.347,0,0,0,0,80.147v29.284a3.347,3.347,0,0,0,3.347,3.347Zm34.3,5.02h-25.1c0-.414,0-1.673,2.51-1.673h20.08c2.51,0,2.51,1.259,2.51,1.673Zm-5.538-5.02.836,1.673h-15.7l.836-1.673Zm0,0" transform="translate(-0.001 -69.27)" fill="#0fbf61"/>
@@ -238,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow bounceInRight">
                         <div class="service">
                             <svg class="service__icon" width="47.891" height="47.891" viewBox="0 0 47.891 47.891">
                                 <path id="Path_70" data-name="Path 70" d="M43.214,0H4.677A4.682,4.682,0,0,0,0,4.677V33.3a4.682,4.682,0,0,0,4.677,4.677H19.269v4.3h-.935a4.678,4.678,0,0,0-4.677,4.677.935.935,0,0,0,.935.935H33.3a.935.935,0,0,0,.935-.935,4.682,4.682,0,0,0-4.677-4.677h-.935v-4.3H43.214A4.682,4.682,0,0,0,47.891,33.3V4.677A4.682,4.682,0,0,0,43.214,0ZM4.677,1.871H43.214a2.809,2.809,0,0,1,2.806,2.806V28.623h-4.3V7.109a.935.935,0,0,0-.935-.935H33.3a.935.935,0,0,0-.935.935V28.623H27.682c-.01-.968-.035-1.921-.075-2.846a60.165,60.165,0,0,0-.731-7.484,4.677,4.677,0,0,0,1.277-6.1L24.911,6.576a.935.935,0,0,0-1.62,0l-3.243,5.616a4.676,4.676,0,0,0,1.029,5.9,59.377,59.377,0,0,0-.788,7.68c-.042.935-.069,1.889-.079,2.848H15.527V14.592a.93.93,0,0,0-.092-.4s0-.01-.006-.015L11.687,6.691a.936.936,0,0,0-1.673,0L6.272,14.174l-.006.015a.93.93,0,0,0-.093.4V28.623h-4.3V4.677A2.809,2.809,0,0,1,4.677,1.871ZM34.235,28.623V8.044h5.612V9.915h-.935a.935.935,0,0,0,0,1.871h.935v2.806h-.935a.935.935,0,0,0,0,1.871h.935v2.806h-.935a.935.935,0,0,0,0,1.871h.935v3.742h-.935a.935.935,0,0,0,0,1.871h.935v1.871ZM24.1,19.2a4.684,4.684,0,0,0,1.009-.112c.174,1.113.429,3.081.579,5.789H22.208c.158-2.706.425-4.705.61-5.856A4.683,4.683,0,0,0,24.1,19.2Zm0-1.871a2.81,2.81,0,0,1-2.433-4.206L24.1,8.915l2.432,4.212A2.808,2.808,0,0,1,24.1,17.333Zm-1.979,9.418h3.65c.02.615.033,1.24.04,1.871H22.08c.007-.627.021-1.252.042-1.871ZM11.786,28.623v-13.1h1.871v13.1Zm-3.742,0v-13.1H9.915v13.1Zm.578-14.966L10.85,9.2l2.228,4.456ZM32.2,46.021H15.686a2.812,2.812,0,0,1,2.647-1.871H29.558A2.811,2.811,0,0,1,32.2,46.021Zm-5.452-3.742H21.139v-4.3h5.612Zm16.463-6.173H4.677A2.809,2.809,0,0,1,1.871,33.3V30.493H46.02V33.3A2.809,2.809,0,0,1,43.214,36.106Zm0,0" fill="#0fbf61"/>
@@ -254,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow bounceInRight">
                         <div class="service">
                             <svg class="service__icon" width="47.891" height="47.891" viewBox="0 0 47.891 47.891">
                                 <path id="Path_70" data-name="Path 70" d="M43.214,0H4.677A4.682,4.682,0,0,0,0,4.677V33.3a4.682,4.682,0,0,0,4.677,4.677H19.269v4.3h-.935a4.678,4.678,0,0,0-4.677,4.677.935.935,0,0,0,.935.935H33.3a.935.935,0,0,0,.935-.935,4.682,4.682,0,0,0-4.677-4.677h-.935v-4.3H43.214A4.682,4.682,0,0,0,47.891,33.3V4.677A4.682,4.682,0,0,0,43.214,0ZM4.677,1.871H43.214a2.809,2.809,0,0,1,2.806,2.806V28.623h-4.3V7.109a.935.935,0,0,0-.935-.935H33.3a.935.935,0,0,0-.935.935V28.623H27.682c-.01-.968-.035-1.921-.075-2.846a60.165,60.165,0,0,0-.731-7.484,4.677,4.677,0,0,0,1.277-6.1L24.911,6.576a.935.935,0,0,0-1.62,0l-3.243,5.616a4.676,4.676,0,0,0,1.029,5.9,59.377,59.377,0,0,0-.788,7.68c-.042.935-.069,1.889-.079,2.848H15.527V14.592a.93.93,0,0,0-.092-.4s0-.01-.006-.015L11.687,6.691a.936.936,0,0,0-1.673,0L6.272,14.174l-.006.015a.93.93,0,0,0-.093.4V28.623h-4.3V4.677A2.809,2.809,0,0,1,4.677,1.871ZM34.235,28.623V8.044h5.612V9.915h-.935a.935.935,0,0,0,0,1.871h.935v2.806h-.935a.935.935,0,0,0,0,1.871h.935v2.806h-.935a.935.935,0,0,0,0,1.871h.935v3.742h-.935a.935.935,0,0,0,0,1.871h.935v1.871ZM24.1,19.2a4.684,4.684,0,0,0,1.009-.112c.174,1.113.429,3.081.579,5.789H22.208c.158-2.706.425-4.705.61-5.856A4.683,4.683,0,0,0,24.1,19.2Zm0-1.871a2.81,2.81,0,0,1-2.433-4.206L24.1,8.915l2.432,4.212A2.808,2.808,0,0,1,24.1,17.333Zm-1.979,9.418h3.65c.02.615.033,1.24.04,1.871H22.08c.007-.627.021-1.252.042-1.871ZM11.786,28.623v-13.1h1.871v13.1Zm-3.742,0v-13.1H9.915v13.1Zm.578-14.966L10.85,9.2l2.228,4.456ZM32.2,46.021H15.686a2.812,2.812,0,0,1,2.647-1.871H29.558A2.811,2.811,0,0,1,32.2,46.021Zm-5.452-3.742H21.139v-4.3h5.612Zm16.463-6.173H4.677A2.809,2.809,0,0,1,1.871,33.3V30.493H46.02V33.3A2.809,2.809,0,0,1,43.214,36.106Zm0,0" fill="#0fbf61"/>
@@ -270,7 +272,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow bounceInRight">
                         <div class="service">
                             <svg class="service__icon" width="47.891" height="47.891" viewBox="0 0 47.891 47.891">
                                 <path id="Path_70" data-name="Path 70" d="M43.214,0H4.677A4.682,4.682,0,0,0,0,4.677V33.3a4.682,4.682,0,0,0,4.677,4.677H19.269v4.3h-.935a4.678,4.678,0,0,0-4.677,4.677.935.935,0,0,0,.935.935H33.3a.935.935,0,0,0,.935-.935,4.682,4.682,0,0,0-4.677-4.677h-.935v-4.3H43.214A4.682,4.682,0,0,0,47.891,33.3V4.677A4.682,4.682,0,0,0,43.214,0ZM4.677,1.871H43.214a2.809,2.809,0,0,1,2.806,2.806V28.623h-4.3V7.109a.935.935,0,0,0-.935-.935H33.3a.935.935,0,0,0-.935.935V28.623H27.682c-.01-.968-.035-1.921-.075-2.846a60.165,60.165,0,0,0-.731-7.484,4.677,4.677,0,0,0,1.277-6.1L24.911,6.576a.935.935,0,0,0-1.62,0l-3.243,5.616a4.676,4.676,0,0,0,1.029,5.9,59.377,59.377,0,0,0-.788,7.68c-.042.935-.069,1.889-.079,2.848H15.527V14.592a.93.93,0,0,0-.092-.4s0-.01-.006-.015L11.687,6.691a.936.936,0,0,0-1.673,0L6.272,14.174l-.006.015a.93.93,0,0,0-.093.4V28.623h-4.3V4.677A2.809,2.809,0,0,1,4.677,1.871ZM34.235,28.623V8.044h5.612V9.915h-.935a.935.935,0,0,0,0,1.871h.935v2.806h-.935a.935.935,0,0,0,0,1.871h.935v2.806h-.935a.935.935,0,0,0,0,1.871h.935v3.742h-.935a.935.935,0,0,0,0,1.871h.935v1.871ZM24.1,19.2a4.684,4.684,0,0,0,1.009-.112c.174,1.113.429,3.081.579,5.789H22.208c.158-2.706.425-4.705.61-5.856A4.683,4.683,0,0,0,24.1,19.2Zm0-1.871a2.81,2.81,0,0,1-2.433-4.206L24.1,8.915l2.432,4.212A2.808,2.808,0,0,1,24.1,17.333Zm-1.979,9.418h3.65c.02.615.033,1.24.04,1.871H22.08c.007-.627.021-1.252.042-1.871ZM11.786,28.623v-13.1h1.871v13.1Zm-3.742,0v-13.1H9.915v13.1Zm.578-14.966L10.85,9.2l2.228,4.456ZM32.2,46.021H15.686a2.812,2.812,0,0,1,2.647-1.871H29.558A2.811,2.811,0,0,1,32.2,46.021Zm-5.452-3.742H21.139v-4.3h5.612Zm16.463-6.173H4.677A2.809,2.809,0,0,1,1.871,33.3V30.493H46.02V33.3A2.809,2.809,0,0,1,43.214,36.106Zm0,0" fill="#0fbf61"/>
@@ -533,7 +535,7 @@
                     <span class="services__title">Trendy News Feeds</span>
                 </div>
                 <div class="row justify">
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow fadeInLeft">
                         <div class="blog-content">
                             <img class="blog-content__img" src="images/blog-1.jpg" alt="blog-1">
                             <div class="blog-content__wrapper">
@@ -550,7 +552,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
                         <div class="blog-content">
                             <img class="blog-content__img" src="images/blog-2.jpg" alt="blog-1">
                            <div class="blog-content__wrapper">
@@ -567,7 +569,7 @@
                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 wow fadeInRight">
                         <div class="blog-content">
                             <img class="blog-content__img" src="images/blog-3.jpg" alt="blog-1">
                            <div class="blog-content__wrapper">
@@ -613,7 +615,7 @@
                     <span class="header-title__icon">folio</span>
                 </h2>
                 <p class="footer-top__caption">I’m a digital designer living in United States. Apart from eating burger</p>
-                <a class="footer-top__btn" href="#">
+                <a class="footer-top__btn">
                     <svg class="footer-top__svg" width="22.294" height="13.747" viewBox="0 0 22.294 13.747">
                         <g id="arrow-2" transform="translate(0 72.397) rotate(-90)">
                           <g id="chevron-right" transform="translate(58.65)">
@@ -644,6 +646,7 @@
         </div>
         <span class="footer__copyright">www.inkyy.com  All Rights Reserved</span>
     </footer>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script text="Js">
@@ -654,5 +657,11 @@
         },
     });
     </script>
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
+    
 </body>
 </html>
